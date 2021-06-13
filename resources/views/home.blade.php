@@ -30,4 +30,9 @@
     </div>
   </nav>
 
-
+  @if(session()->has('mssg'))
+  <div class="mssg alert alert-success alert-dismissible">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <p class="mssg">{{ session('mssg') }}</p>
+  </div>
+@endif

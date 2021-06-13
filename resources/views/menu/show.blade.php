@@ -35,11 +35,11 @@
       <div class="container">
           <div class="row">
               <div class="col-md-6">
-                  <img src="{{$item->img}}" class="img-fluid" alt="{{$item->name}}">
+                  <img src="{{$sweet->img}}" class="img-fluid" alt="{{$sweet->name}}">
                 </div>
                 <div class="col-md-6 mt-5">
-                    <h2 class="mb-3">{{$item->name}}</h2>
-                    <h4 class="mb-3">{{$item->price}}</h4>
+                    <h2 class="mb-3">{{$sweet->name}}</h2>
+                    <h4 class="mb-3">{{$sweet->price}}</h4>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis.</p>
 
                     <div class="row">

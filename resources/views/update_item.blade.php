@@ -6,15 +6,15 @@
         <form action="/" method="POST">
             @csrf
             <div class="form-group">
-                <input type="file" class="form-control-file" id="img" name="img">
+                <input type="file" class="form-control-file" id="img" name="img" value="{{$sweet->img}}">
               </div>
             <div class="form-group">
                 <label for="name">Name: </label>
-                <input type="text" id="name" name="name" class="form-control">
+                <input type="text" id="name" name="name" class="form-control" value="{{$sweet->name}}">
             </div>
             <div class="form-group">
                 <label for="price">Price: </label>
-                <input type="text" id="price" name="price" class="form-control">
+                <input type="text" id="price" name="price" class="form-control" value="{{$sweet->price}}">
             </div>
             <div class="form-group">
                 <label for="type">Type: </label>

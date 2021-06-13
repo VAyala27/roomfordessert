@@ -10,13 +10,14 @@ class SweetsController extends Controller
     public function index(){
         $sweets = Sweets::all();
 
-        return view('menu',['sweets' => $sweets]);
+        // return view('menu',['sweets' => $sweets]);
+        return view('list',['sweets' => $sweets]);
     }
 
     public function show($id){
         $sweet = Sweets::findOrFail($id);
 
-        return view('menu.show', ['item' => $sweet]);
+        return view('menu.show', ['sweet' => $sweet]);
     }
 
     public function create(){
@@ -33,6 +34,14 @@ class SweetsController extends Controller
 
         $sweet->save();
 
-        return redirect('/');
+        // With is session data 
+        return redirect('/')->with('mssg', 'Item succssfully added');
+    }
+
+    public function destroy($id){
+        $sweet = Sweets::findOrFail($id);
+        $sweet->delete();
+
+        return redirect('/list');
     }
 }

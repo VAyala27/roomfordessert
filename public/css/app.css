@@ -57,6 +57,11 @@ cite {
   width: 300px !important;
 }
 
+.list-item{
+  height: 75px !important;
+  width: 75px !important;
+}
+
 .map {
   height: 75vh !important;
 }

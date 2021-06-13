@@ -45,7 +45,8 @@
 <section id="contact" class="py-4 container">
     <form>
         <div class="row d-flex align-items-center">
-            <div class=" col-6 col-md-6">
+            <div class=" col-12 col-md-6">
+              <h2 class="text-center">Online Ordering</h2>
                 <div class="form-group">
                     <label>Email address</label>
                     <input type="email" class="form-control" placeholder="Enter email">
@@ -77,7 +78,7 @@
 
                 <button type="submit" class="btn btn-primary mx-auto d-block">Submit</button>
             </div>
-            <div class="col-6 col-md-6 map"></div>
+            <div class="col-12 col-md-6 map"></div>
         </div>
     </form>
 </section>
