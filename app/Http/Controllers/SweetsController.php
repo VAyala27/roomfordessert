@@ -44,4 +44,19 @@ class SweetsController extends Controller
 
         return redirect('/list');
     }
+
+    public function showData($id){
+        $sweet = Sweets::findOrFail($id);
+        return view('edit', ['sweet' => $sweet]);
+    }
+
+    public function update(Request $req){
+        $sweet = Sweets::findOrFail($req->id);
+        $sweet->img = '/img/' . $req->img;
+        $sweet->name = $req->name;
+        $sweet->price = $req->price;
+        $sweet->type = $req->type;
+        $sweet->save();
+        return redirect('list');
+    }
 }

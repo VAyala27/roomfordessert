@@ -45,6 +45,8 @@ Route::get('/contact', function(){
 
 Route::get('/list', [SweetsController::class, 'index']);
 
-// Route::get('/update_item/{id}', [SweetsController::class, 'update']);
-
 Route::get('delete/{id}', [SweetsController::class, 'destroy']);
+
+Route::get('edit/{id}', [SweetsController::class,'showData']);
+
+Route::post('edit', [SweetsController::class,'update']);

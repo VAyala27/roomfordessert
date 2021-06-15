@@ -23,7 +23,7 @@
                 <td>{{ $sweet->name }}</td>
                 <td>{{ $sweet->price }}</td>
                 <td>{{ $sweet->type }}</td>
-                <td><i class="fas fa-edit"></i></td>
+                <td><a href="edit/{{$sweet->id}}"><i class="fas fa-edit"></i></a></td>
                 <td><a href='delete/{{$sweet->id}}'><i class="fas fa-trash-alt text-danger"></i></a></td>
             </tr>
             @endforeach
